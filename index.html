@@ -25,9 +25,25 @@
        for(let i = 0; i < 5; i++){
         let list = document.getElementById("list");
        let listItem = document.createElement("li");
-       listItem.innerText = "line" +" "+ i;
+       listItem.innerText = "line"+" "+ i;
        list.appendChild(listItem);
-       
+       list.style.color = "white";
+       if(i == 2){
+        listItem.style.color = "red";
+        break;
+        console.log("list");
+
+       }
+    }
+
+       let x = 0;
+
+       while (x <= 20) {
+        let list = document.getElementById("list");
+       let listItem = document.createElement("li");
+       listItem.innerText = "line"+" "+ x;
+       list.appendChild(listItem);
+       x++;
        }
 
 
