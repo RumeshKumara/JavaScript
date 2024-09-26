@@ -12,62 +12,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Welcome to my webpage!</h1>
-
-   <p id="currentDate"></p>
-   <p id="currentTime"></p>
-   <p id="demo"></p>
+   
 
  
 
 
     <script>
 
-        var today = new Date();
-
-        // Get the day, month, and year
-        var day = today.getDate();
-        var month = today.getMonth() + 1; // Months are zero-based
-        var year = today.getFullYear();
-
-        // Format the date as MM/DD/YYYY
-        var formattedDate = month + '/' + day + '/' + year;
-
-        // Display the date in the HTML element with id "currentDate"
-        document.getElementById("currentDate").innerText = formattedDate;
-
-        // Get the hour, minute, and second
-        var hour = today.getHours();
-        var minute = today.getMinutes();
-        var second = today.getSeconds();
-        
-        // Format the time as HH:MM:SS
-        var formattedTime = hour + ':' + minute + ':' + second;
-        
-        // Display the time in the HTML element with id "currentTime"
-        document.getElementById("currentTime").innerText = formattedTime;
-        
-        // Update the date and time every second
-        setInterval(function() {
-            var today = new Date();
-            
-            // Get the updated date and time
-            var hour = today.getHours();
-            var minute = today.getMinutes();
-            var second = today.getSeconds();
-            
-            // Format the updated time as HH:MM:SS
-            var formattedTime = hour + ':' + minute + ':' + second;
-            
-            // Update the HTML elements with the updated time
-            document.getElementById("currentTime").innerText = formattedTime;
-        }, 1000); // Update every second
-
-                // Get the user's geolocation
        
 
-        const d = new Date();
-        document.getElementById("demo").innerText = d;
+
         
       
           
