@@ -12,9 +12,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Loops and iteration</h1>
+
+    <!-- 1 -->
+   <!-- <h1>Loops and iteration</h1>
    <ul id="list">
-   </ul>
+   </ul> -->
+
+   <button onclick="showAlert()">
+    Alert
+   </button>
+   <br>
+   <hr>
+   <div id="demo">
+   </div>
 
  
 
@@ -22,27 +32,37 @@
     <script>
 
 
-       for(let i = 0; i < 5; i++){
-        let list = document.getElementById("list");
-       let listItem = document.createElement("li");
-       listItem.innerText = "line"+" "+ i;
-       list.appendChild(listItem);
-       list.style.color = "white";
-       if(i == 2){
-        listItem.style.color = "red";
-        break;
-       }
+    //    for(let i = 0; i < 5; i++){
+    //     let list = document.getElementById("list");
+    //    let listItem = document.createElement("li");
+    //    listItem.innerText = "line"+" "+ i;
+    //    list.appendChild(listItem);
+    //    list.style.color = "white";
+    //    if(i == 2){
+    //     listItem.style.color = "red";
+    //     break;
+    //    }
+    // }
+
+    //    let x = 0;
+
+    //    while (x <= 20) {
+    //     let list = document.getElementById("list");
+    //    let listItem = document.createElement("li");
+    //    listItem.innerText = "line"+" "+ x;
+    //    list.appendChild(listItem);
+    //    x++;
+    //    }
+
+    function showAlert() {
+        let input = confirm("Are you sure you want to send");
+        console.log(input);
+        if (input) {
+            document.getElementById("demo").innerHTML = "Message sent"
+        } else {
+            document.getElementById("demo").innerHTML = "Message not send"
+        }
     }
-
-       let x = 0;
-
-       while (x <= 20) {
-        let list = document.getElementById("list");
-       let listItem = document.createElement("li");
-       listItem.innerText = "line"+" "+ x;
-       list.appendChild(listItem);
-       x++;
-       }
 
 
 
