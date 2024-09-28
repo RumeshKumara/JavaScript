@@ -1,16 +1,5 @@
-console.log("Starting");
-var v = 10;
-let l = 30;
-const c = 20;
-
-// console.log(v, l, c);
-
-function scopeTest(){
-    var v = 5;
-    let l = 40;
-    const c = 30;
-
-    console.log(v, l, c);
+const greet = (age) => {
+    console.log(`Hello, I am ${age} years old.`);
 }
 
-scopeTest();
+greet(30); // Outputs: Hello, I am 30 years old.
