@@ -1,16 +1,8 @@
-this.name = 'John';
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4, 5]; // [1, 2, 3, 4, 5]
 
-const obj1 = {
-    name: 'Alice',
-    nfunction: function(){
-        console.log(this.name);
-    },
-    afunction: () => {
-        console.log(this.name);
-    }
-    
+function sum(a, b, c) {
+  return a + b + c;
 }
 
-obj1.nfunction();
-
-obj1.afunction();
+console.log(sum(...numbers)); // 6
