@@ -1,5 +1,16 @@
-const greet = (age) => {
-    console.log(`Hello, I am ${age} years old.`);
+this.name = 'John';
+
+const obj1 = {
+    name: 'Alice',
+    nfunction: function(){
+        console.log(this.name);
+    },
+    afunction: () => {
+        console.log(this.name);
+    }
+    
 }
 
-greet(30); // Outputs: Hello, I am 30 years old.
+obj1.nfunction();
+
+obj1.afunction();
