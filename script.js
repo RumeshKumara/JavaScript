@@ -11,6 +11,6 @@ class rectangle {
   }
 }
 
-const re = new rectangle(2, 5);
+const re = new rectangle(5, 6);
 
 console.log(re.gerArea()); // Output: 10
