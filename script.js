@@ -1,12 +1,13 @@
-class rectangle {
-  constructor(_width, _height){
-    this.width = _width;
-    this.height = _height;
-    console.log(`we are using ${this.width} and ${this.height}`);
-  }
+function sFile(){
+  setTimeout( ()=>{
+  console.log("File");
 
-  
+  }, 3000)
 }
 
-const re = new rectangle(5, 6);
+function sFolder(){
+  console.log("Folder");
+}
 
+sFile();
+sFolder();
