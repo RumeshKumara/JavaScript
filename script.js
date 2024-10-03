@@ -1,13 +1,15 @@
-function sFile(){
-  setTimeout( ()=>{
-  console.log("File");
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
 
-  }, 3000)
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
 }
 
-function sFolder(){
-  console.log("Folder");
-}
-
-sFile();
-sFolder();
+const myCar = new Car("Ford", 2002);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
