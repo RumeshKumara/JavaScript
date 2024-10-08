@@ -54,7 +54,7 @@ console.log(nimal['subjects'][3]);
 console.log(nimal.degree.name);
 console.log(nimal['degree'].credits);
 console.log(nimal.projects[1].technology);
-console.log('Year of Birth : '+nimal.yearOfBirth(2021));
+console.log('Year of Birth : '+nimal.yearOfBirth(2022));
 
 // Modify values
 nimal.job = 'Engineer';
