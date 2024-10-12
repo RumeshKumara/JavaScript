@@ -1,3 +1,3 @@
 const fruits = [];
-fruits.push("banana", "apple", "peach");
+fruits.push("banana", "mango", "peach");
 console.log(fruits.length); // 3
